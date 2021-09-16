@@ -39,6 +39,28 @@ sh make.sh
 
 Download links: [VidVRD](https://xdshang.github.io/docs/imagenet-vidvrd.html) and [AG](https://www.actiongenome.org/#download). 
 
+Create directories for datasets. The directories for `./data/` should look like:
+
+```
+|-- data
+|   |-- ag
+|   |-- vidvrd
+|   |-- obj_embed
+```
+
+where `ag` and `vidvrd` are for AG and VidVRD datasets, and `obj_embed` is for [GloVe](https://nlp.stanford.edu/projects/glove/), the weights of pre-trained word vectors. The final directories for [GloVe](https://nlp.stanford.edu/projects/glove/) should look like:
+
+```
+|-- obj_embed
+|   |-- glove.6B.200d.pt
+|   |-- glove.6B.300d.pt
+|   |-- glove.6B.300d.txt
+|   |-- glove.6B.200d.txt
+|   |-- glove.6B.100d.txt
+|   |-- glove.6B.50d.txt
+|   |-- glove.6B.300d
+```
+
 #### AG
 
 Put the .mp4 files into `./data/ag/videos/`. Put the [annotations](https://drive.google.com/drive/folders/1LGGPK_QgGbh9gH9SDFv_9LIhBliZbZys?usp=sharing) into `./data/ag/annotations/`.
