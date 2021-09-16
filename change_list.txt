@@ -1,0 +1,5 @@
+ctreexreldn\rel\lib\datasets_rel\dataset_catalog_rel.py    -add dataset json path
+ctreexreldn\rel\lib\roi_data_rel\minibatch_rel.py    -load img (cv2.imreadl; bgr)
+ctreexreldn\rel\tools\train_net_step_rel.py    -change cfg
+ctreexreldn\rel\configs\vrd\e2e_faster_rcnn_VGG16_16_epochs_vrd_v3_default_node_contrastive_loss_w_so_p_aware_margin_point2_so_weight_point5_COCO_pretrained.yaml    -change cfg
+ctreexreldn\rel\lib\modeling_rel\relpn_heads.py; ctreexreldn\rel\lib\datasets_rel\json_dataset_rel.py    -batch_size must equal to 1
