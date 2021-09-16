@@ -158,7 +158,7 @@ VidVrd, gt box
 | :-------: | :------: | :------: | :-------: |
 | TRACE |      30.6      |   19.3   |   24.6   |
 
-![gt_vidvrd](D:\My_projects\projs\rel\gt_vidvrd.png)
+![gt_vidvrd](./gt_vidvrd.png)
 
 ## Training Relationship Detection Models
 
