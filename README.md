@@ -219,11 +219,13 @@ python tools/test_vidvrd.py --prediction Outputs/vidvrd_new101/baseline_relation
 evaluation for detected boxes
 
 ```bash
-CUDA_VISIBLE_DEVICES=1,2,3,4,5,6,7 python tools/test_net_rel.py --dataset vidvrd --cfg configs/vidvrd/vidvrd_res101xi3d50_all_boxes_sample_train_flip_dc5_2d_new.yaml --load_ckpt Outputs/vidvrd_res101xi3d50_all_boxes_sample_train_flip_dc5_2d_new/Aug01-16-20-06_gpuserver-11_step_with_prd_cls_v3/ckpt/model_step12999.pth --output_dir Outputs/vidvrd_new101 --do_val --multi-gpu-testing
+CUDA_VISIBLE_DEVICES=1 python tools/test_net_rel.py --dataset vidvrd --cfg configs/vidvrd/vidvrd_res101xi3d50_pred_boxes_flip_dc5_2d_new.yaml --load_ckpt Outputs/vidvrd_res101xi3d50_all_boxes_sample_train_flip_dc5_2d_new/Aug01-16-20-06_gpuserver-11_step_with_prd_cls_v3/ckpt/model_step12999.pth --output_dir Outputs/vidvrd_new101_det --do_val
 
-python tools/transform_vidvrd_results.py --input_dir Outputs/vidvrd_new101 --output_dir Outputs/vidvrd_new101
+python tools/transform_vidvrd_results.py --input_dir Outputs/vidvrd_new101_det --output_dir Outputs/vidvrd_new101_det
 
-python tools/test_vidvrd.py --prediction Outputs/vidvrd_new101/baseline_relation_prediction.json --groundtruth data/vidvrd/annotations/test_gt.json
+python tools/test_vidvrd.py --prediction Outputs/vidvrd_new101_det/baseline_relation_prediction.json --groundtruth data/vidvrd/annotations/test_gt.json
+
+
 ```
 ### AG
 
