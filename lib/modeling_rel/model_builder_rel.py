@@ -703,7 +703,10 @@ class Generalized_RCNN(nn.Module):
         
         if (cfg.ENABLE_FRAME_PRE_PROCESSING and pre_processed_frames_rpn_ret is not None):
             if dataset_name.find('vidvrd') >= 0:
-                pre_processed_boxes = 0
+                #pre_processed_boxes = 0
+                pre_processed_boxes = pre_processed_frames_rpn_ret['rois'].copy()
+                #print(pre_processed_boxes)
+                #assert False
             else:
                 pre_processed_boxes = None
             if self.training:
