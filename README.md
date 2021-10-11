@@ -105,6 +105,21 @@ The final directories for VidVRD dataset should look like:
 |   |   |-- ...
 ```
 
+### Change the format of annotations for AG and VidVRD
+
+```
+# ROOT=path/to/cloned/repository
+cd $ROOT
+
+python tools/rename_ag.py
+
+python tools/rename_vidvrd_anno.py
+
+python tools/get_vidvrd_pretrained_rois.py --out_rpath pre_processed_boxes_gt_dense_more --rpath traj_cls_gt
+
+python tools/get_vidvrd_pretrained_rois.py --out_rpath pre_processed_boxes_dense_more
+```
+
 ### Dump  frames
 
 Our ffmpeg version is 4.2.2-0york0~16.04 so using `--ignore_editlist` to avoid some frames being ignored. The jpg format saves the drive space.
@@ -149,20 +164,7 @@ cd $ROOT
 python tools/dataset_split.py
 ```
 
-### Change the format of annotations for AG and VidVRD
 
-```
-# ROOT=path/to/cloned/repository
-cd $ROOT
-
-python tools/rename_ag.py
-
-python tools/rename_vidvrd_anno.py
-
-python tools/get_vidvrd_pretrained_rois.py --out_rpath pre_processed_boxes_gt_dense_more --rpath traj_cls_gt
-
-python tools/get_vidvrd_pretrained_rois.py --out_rpath pre_processed_boxes_dense_more
-```
 
 ## Pretrained Models
 
