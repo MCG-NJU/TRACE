@@ -289,11 +289,11 @@ This project is built on top of [ContrastiveLosses4VRD](https://github.com/NVIDI
 If you use this code in your research, please use the following BibTeX entry.
 ```
 @inproceedings{Target_Adaptive_Context_Aggregation_for_Video_Scene_Graph_Generation,
-  title     = {Target Adaptive Context Aggregation for Video Scene Graph Generation},
   author    = {Yao Teng and
                Limin Wang and
                Zhifeng Li and
                Gangshan Wu},
+  title     = {Target Adaptive Context Aggregation for Video Scene Graph Generation},
   booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision},
   pages     = {13688--13697},
   year      = {2021}
