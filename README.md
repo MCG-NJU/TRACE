@@ -172,7 +172,7 @@ Download model weights from [here](https://drive.google.com/drive/folders/1eaJPa
 
 - pretrained object detection
 - TRACE trained on VidVRD in  `detection_models/vidvrd/trained_rel`
-- TRACE trained on AG in `detection_models/ag/trained_rel` (to-do)
+- TRACE trained on AG in `detection_models/ag/trained_rel` 
 
 ## Performance
 
@@ -190,7 +190,11 @@ VidVrd, detected box
 | :-------: | :------: | :------: | :-------: |
 | TRACE |      16.3      |   9.2   |   11.2   |
 
-![gt_vidvrd](./det_vidvrd.png)
+![det_vidvrd](./det_vidvrd.png)
+
+AG, detected box
+
+![det_ag](./ag_sgdet.png)
 
 ## Training Relationship Detection Models
 
