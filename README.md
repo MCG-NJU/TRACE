@@ -78,7 +78,7 @@ The final directories for VidVRD dataset should look like:
 ```
 
 #### VidVRD
-Put the .mp4 files into `./data/vidvrd/videos/`. Put the three documents `test`, `train` and `videos` from the [vidvrd-annoataions](https://zdtnag7mmr.larksuite.com/file/boxuseoWLGxId1KmbtQyxj8HPre) into `./data/vidvrd/annotations/`. (If the links are invalid, you can refer to their offical website: [ImageNet-VidVRD dataset](annotations))
+Put the .mp4 files into `./data/vidvrd/videos/`. Put the three documents `test`, `train` and `videos` from the [vidvrd-annoataions](https://zdtnag7mmr.larksuite.com/file/boxuseoWLGxId1KmbtQyxj8HPre) into `./data/vidvrd/annotations/`. (If the links are invalid, you can refer to their offical website: [ImageNet-VidVRD dataset](https://xdshang.github.io/docs/imagenet-vidvrd.html))
 
 Download precomputed precomputed features, model and detected relations from [here](https://internal-api-drive-stream.larksuite.com/space/api/box/stream/download/all/boxusS8Z0kwEizoPPh5h7vx7Usf/) (or [here](https://drive.google.com/drive/folders/1DRy5OXhvv36SWKHFcW6GAX69nbwPkYRN?usp=sharing)). Extract `features` and `models` into `./data/vidvrd/`.
 
